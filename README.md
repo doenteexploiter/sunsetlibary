@@ -131,13 +131,6 @@ settingsSection:AddLabel("This is an important message")
 
 ---
 
-## ⚠️ Requirements
-
-* Must be used inside a **LocalScript**
-* Library must be inside `ReplicatedStorage`
-
----
-
 ## 📌 Notes
 
 * Asset ID is optional in `CreateWindow`
@@ -147,4 +140,4 @@ settingsSection:AddLabel("This is an important message")
 
 ## 👑 Credits
 
-doente exploits/Mlk_doente70😎
+doente exploits/Mlk_doente70
