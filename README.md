@@ -19,7 +19,32 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/doent
 ```lua
 local win = Library:CreateWindow("Sunset UI", "assetid") -- asset id optional
 ```
+## 🪟 Color - UI Lib 🎨
 
+```lua
+-- Config color
+win:SetToggleColor(Color3.fromRGB(255, 106, 0))
+win:SetToggleSize(50)
+win:SetThemeColor(Color3.fromRGB(255, 106, 0))
+
+- MUDAR O ÍCONE DO BOTÃO (APENAS O ÍCONE)
+win:SetToggleIcon("97939372251102")  -- Substitua pelo ID do seu asset
+```
+Decoration 🎉
+
+```lua
+-- Retrato do personagem
+section:AddRetrato()
+
+-- Nome do jogo
+section:AddGameName()
+
+-- Nome do player
+section:AddNamePlayer()
+
+-- Players no servidor
+section:AddPlayersServer()
+```
 ---
 
 ## 📑 Tabs & Sections
@@ -48,6 +73,14 @@ end)
 ```lua
 section:AddToggle("Enable Feature", function(state)
 	print("Toggle state:", state)
+end)
+```
+
+## TextBox 📜
+```lua
+section:AddTextBox("Digite seu nome aqui...", function(text)
+	print("Texto digitado:", text)
+	win:Notify("Mensagem", "Você digitou: " .. text, 3)
 end)
 ```
 
