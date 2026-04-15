@@ -27,7 +27,7 @@ win:SetToggleColor(Color3.fromRGB(255, 106, 0))
 win:SetToggleSize(50)
 win:SetThemeColor(Color3.fromRGB(255, 106, 0))
 
-- MUDAR O ÍCONE DO BOTÃO (APENAS O ÍCONE)
+-- MUDAR O ÍCONE DO BOTÃO (APENAS O ÍCONE)
 win:SetToggleIcon("97939372251102")  -- Substitua pelo ID do seu asset
 ```
 
