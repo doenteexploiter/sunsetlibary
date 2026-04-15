@@ -61,26 +61,6 @@ function Library:CreateWindow(title)
 		end)
 	end
 
-	-- Tela de loading
-	local Login = Instance.new("Frame")
-	Login.Size = UDim2.new(1, 0, 1, 0)
-	Login.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Login.BackgroundTransparency = 0.5
-	Login.Parent = gui
-
-	local loginText = Instance.new("TextLabel")
-	loginText.Size = UDim2.new(1, 0, 1, 0)
-	loginText.Text = "Loading..."
-	loginText.TextColor3 = currentColor
-	loginText.BackgroundTransparency = 1
-	loginText.TextScaled = true
-	loginText.Parent = Login
-
-	task.wait(2)
-	Login:Destroy()
-
-	local notified = false
-
 	-- BOTÃO TOGGLE
 	toggleButton = Instance.new("ImageButton")
 	toggleButton.Size = UDim2.new(0, toggleButtonSize, 0, toggleButtonSize)
