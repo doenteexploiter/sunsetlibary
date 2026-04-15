@@ -30,7 +30,16 @@ win:SetThemeColor(Color3.fromRGB(255, 106, 0))
 - MUDAR O ÍCONE DO BOTÃO (APENAS O ÍCONE)
 win:SetToggleIcon("97939372251102")  -- Substitua pelo ID do seu asset
 ```
-Decoration 🎉
+
+---
+
+## 📑 Tabs & Sections
+
+```lua
+local mainTab = win:CreateTab("Main")
+local section = mainTab:AddSection("Player Info")
+```
+## Decoration 🎉
 
 ```lua
 -- Retrato do personagem
@@ -45,15 +54,6 @@ section:AddNamePlayer()
 -- Players no servidor
 section:AddPlayersServer()
 ```
----
-
-## 📑 Tabs & Sections
-
-```lua
-local mainTab = win:CreateTab("Main")
-local section = mainTab:AddSection("Player Info")
-```
-
 ---
 
 # 🔘 UI Elements
